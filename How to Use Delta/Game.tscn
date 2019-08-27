@@ -8,28 +8,28 @@
 [node name="MovingSprite1" type="Sprite" parent="."]
 position = Vector2( 128, 96 )
 texture = ExtResource( 1 )
-offset = Vector2( 88, 0 )
+offset = Vector2( 152, 0 )
 script = ExtResource( 2 )
 
 [node name="MovingSprite2" type="Sprite" parent="."]
 position = Vector2( 640, 96 )
 texture = ExtResource( 1 )
-offset = Vector2( 290, 0 )
+offset = Vector2( 164, 0 )
 script = ExtResource( 2 )
 process_mode = 1
 
 [node name="MovingSprite3" type="Sprite" parent="."]
 position = Vector2( 128, 252 )
 texture = ExtResource( 1 )
-offset = Vector2( 21.7855, 0 )
+offset = Vector2( 55.7028, 0 )
 script = ExtResource( 2 )
-movement_mode = 5
+movement_mode = 3
 speed = 5000.0
 
 [node name="MovingSprite4" type="Sprite" parent="."]
 position = Vector2( 640, 252 )
 texture = ExtResource( 1 )
-offset = Vector2( 87.0526, 0 )
+offset = Vector2( 277.97, 0 )
 script = ExtResource( 2 )
 process_mode = 1
 movement_mode = 1
@@ -39,7 +39,7 @@ speed = 60.0
 [node name="MovingSprite5" type="Sprite" parent="."]
 position = Vector2( 128, 408 )
 texture = ExtResource( 1 )
-offset = Vector2( 8.19212, 0 )
+offset = Vector2( 187.362, 0 )
 script = ExtResource( 2 )
 movement_mode = 3
 speed_mode = 2
@@ -48,7 +48,7 @@ speed = 500.0
 [node name="MovingSprite6" type="Sprite" parent="."]
 position = Vector2( 640, 408 )
 texture = ExtResource( 1 )
-offset = Vector2( 48.3337, 0 )
+offset = Vector2( 207.365, 0 )
 script = ExtResource( 2 )
 process_mode = 1
 movement_mode = 3
@@ -57,7 +57,7 @@ speed = 50.0
 [node name="MovingSprite7" type="Sprite" parent="."]
 position = Vector2( 130, 560 )
 texture = ExtResource( 1 )
-offset = Vector2( 243.485, 0 )
+offset = Vector2( 115.354, 0 )
 script = ExtResource( 2 )
 speed_mode = 3
 speed = 500.0
@@ -65,7 +65,7 @@ speed = 500.0
 [node name="MovingSprite8" type="Sprite" parent="."]
 position = Vector2( 640, 564 )
 texture = ExtResource( 1 )
-offset = Vector2( 262.674, 0 )
+offset = Vector2( 76.6913, 0 )
 script = ExtResource( 2 )
 process_mode = 1
 movement_mode = 1

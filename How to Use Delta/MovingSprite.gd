@@ -33,8 +33,8 @@ export(movement_modes) var movement_mode := movement_modes.MOVE_AND_COLLIDE setg
 export(speed_modes) var speed_mode := speed_modes.CONSTANT_SPEED setget set_speed_mode
 export(float, EXP, 0.01, 5000) var speed := 5.0 setget set_speed
 
-export(float, 1, 1000) var max_distance = 352.0  # Pixels
-export(float, EXP, 100, 5000) var max_velocity = 1000.0  # Resets velocity if moving faster than this
+export(float, 1, 1000) var max_distance = 352.0 setget set_max_distance # Pixels
+export(float, EXP, 100, 5000) var max_velocity = 1000.0 setget set_max_velocity  # Resets velocity if moving faster than this
 
 #var feedback_sprite = Sprite.new()
 #var feedback_label = Label.new()
@@ -155,6 +155,16 @@ func set_speed(new_speed: float) -> void:
     reset()
 
 
+func set_max_distance(new_max_distance: float) -> void:
+    max_distance = new_max_distance
+    reset()
+
+
+func set_max_velocity(new_max_velocity: float) -> void:
+    max_velocity = new_max_velocity
+    reset()
+
+
 func reset() -> void:
     for child in get_children():
         remove_child(child)
@@ -171,7 +181,6 @@ func _reset() -> void:
 
 
 func update_feedback_sprite() -> void:
-    #assert feedback_sprite
     var correct_movement_mode: bool = false
     var correct_speed_mode: bool = false
 
@@ -196,7 +205,6 @@ func update_feedback_sprite() -> void:
 
 
 func update_feedback_label() -> void:
-    #assert feedback_label
     var text := ""
     
     var feedback_label = Label.new()

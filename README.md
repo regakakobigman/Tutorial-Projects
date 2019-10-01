@@ -2,4 +2,4 @@
 
 # Tutorial Projects
 
-These projects are usually related to a post on [my blog](https://regakakobigman.github.io).
+These projects are usually related to a post on [my blog](https://regakakobigman.netlify.com).
